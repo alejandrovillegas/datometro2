@@ -1,0 +1,137 @@
+body {
+  cursor: url('http://ionicframework.com/img/finger.png'), auto;
+}
+.slider {
+  height: 100%;
+}
+.slider-slide {
+  padding-top: 80px;
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
+/* Empty. Add your own CSS if you like */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+body, .pane {
+  background-color: #791577;
+  background-size: cover;
+}
+.range-number{
+  color: white;
+  font-size: 150%;
+}
+.item{
+  background-color: #791577;
+}
+.img-4g{
+  height: 50px;
+  position: relative;
+  top: 21px;
+  padding-left: 3px;
+}
+.we-have-plan-div .text1 {
+  font-size: 125%;
+}
+
+.we-have-plan-div .text2 {
+  background-color: #791577;
+  margin-top: -8px;
+  height: 45px;
+  justify-content: left;
+  display: flex;
+  align-items: center;
+  font-size: 150%;
+}
+.we-have-plan-div {
+  color: #FBFAFB;
+  height: 140px;
+}
+
+.padding-0{
+  margin-top: 0px;
+}
+
+.padding-20{
+  margin-top: 20px;
+}
+
+.yellow {
+  color: #FCEA00;
+}
+.img-slider-1 {
+  width: 47px;
+  content:url("../img/elementos-04.svg");
+}
+.img-slider-2 {
+  width: 47px;
+  content:url("../img/elementos-05.svg");
+}
+.img-slider-3 {
+  width: 47px;
+  content:url("../img/elementos-06.svg");
+}
+.img-slider-4 {
+  width: 47px;
+  content:url("../img/elementos-07.svg");
+}
+.img-slider-5 {
+  width: 47px;
+  content:url("../img/elementos-08.svg");
+}
+.img-slider-6 {
+  width: 47px;
+  content:url("../img/elementos-09.svg");
+}
+.img-slider-7 {
+  width: 47px;
+  content:url("../img/elementos-10.svg");
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  position: relative;
+  top: -1px;
+  z-index: 1;
+  width: 11px;
+  background-image: "../img/elementos-10.svg";
+  /*    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ebf1f6), color-stop(50%,#abd3ee), color-stop(51%,#89c3eb), color-stop(100%,#d5ebfb));
+  */
+  height: 11px;
+
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+}
