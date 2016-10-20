@@ -13,38 +13,38 @@
         <ion-list>
           <div class="item range range-assertive">
             <i class="img-slider-1"></i>
-            <input type="range" name="volume" min="0" max="1000" value="0" ng-change="sumaChanged()" ng-model="volume">
-            <div class="range-number">{{volume}}</div>
-          </div>
-          <div class="item range">
-            <i class="img-slider-2"></i>
-            <input type="range" name="volume" min="0" max="100" value="4" ng-change="sumaChanged()" ng-model="volume2">
-            <div class="range-number">{{volume2}}</div>
-          </div>
-          <div class="item range">
-            <i class="img-slider-3"></i>
-            <input type="range" name="volume" min="0" max="100" value="5" ng-model="volume3">
-            <div class="range-number">{{volume3}}</div>
-          </div>
-          <div class="item range">
-            <i class="img-slider-4"></i>
-            <input type="range" name="volume" ng-model="data1.volume" style="-webkit-slider-thumb:before {background: green !important;}">
+            <input type="range" name="volume" min="0" max="1000"  ng-change="sumaChanged()" ng-model="data1.volume">
             <div class="range-number" ng-bind="data1.volume"></div>
           </div>
           <div class="item range">
+            <i class="img-slider-2"></i>
+            <input type="range" name="volume" min="0" max="100"  ng-change="sumaChanged()" ng-model="data2.volume">
+            <div class="range-number" ng-bind="data2.volume"></div>
+          </div>
+          <div class="item range">
+            <i class="img-slider-3"></i>
+            <input type="range" name="volume" min="0" max="100"  ng-change="sumaChanged()" ng-model="data3.volume">
+            <div class="range-number" ng-bind="data3.volume"></div>
+          </div>
+          <div class="item range">
+            <i class="img-slider-4"></i>
+            <input type="range" name="volume" ng-model="data4.volume" ng-change="sumaChanged()" style="-webkit-slider-thumb:before {background: green !important;}">
+            <div class="range-number" ng-bind="data4.volume"></div>
+          </div>
+          <div class="item range">
             <i class="img-slider-5"></i>
-            <input type="range" name="hrs-per-wk" min="5" max="40" value="5">
-            <div class="range-number">{{volume5}}</div>
+            <input type="range" name="hrs-per-wk" min="5" max="40" value="5" ng-change="sumaChanged()" ng-model="data5.volume">
+            <div class="range-number" ng-bind="data5.volume"></div>
           </div>
           <div class="item range">
             <i class="img-slider-6"></i>
-            <input type="range" name="volume" min="0" max="100" value="3" ng-model="volume6">
-            <div class="range-number">{{volume6}}</div>
+            <input type="range" name="volume" min="0" max="100" value="3" ng-change="sumaChanged()"  ng-model="data6.volume">
+            <div class="range-number" ng-bind="data6.volume"></div>
           </div>
           <div class="item range">
             <i class="img-slider-7"></i>
-            <input type="range" name="volume" min="0" max="100" value="0" ng-model="volume7">
-            <div class="range-number">{{volume7}}</div>
+            <input type="range" name="volume" min="0" max="100" value="0" ng-change="sumaChanged()" ng-model="data7.volume">
+            <div class="range-number" ng-bind="data7.volume"></div>
           </div>
         </ion-list>
 

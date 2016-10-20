@@ -64,13 +64,25 @@ angular.module('ionicApp', ['ionic'])
   .controller('MainCtrl', function($scope, $state) {
     console.log('MainCtrl');
 
+    $scope.data1 = { 'volume' : '0' };
+    $scope.data2 = { 'volume' : '0' };
+    $scope.data3 = { 'volume' : '0' };
+    $scope.data4 = { 'volume' : '0' };
+    $scope.data5 = { 'volume' : '0' };
+    $scope.data6 = { 'volume' : '0' };
+    $scope.data7 = { 'volume' : '0' };
+    $scope.suma = 0;
+
     $scope.sumaChanged =  function(){
 
-      $scope.data1 = { 'volume' : '30' };
-      $scope.data2 = { 'volume' : '50' };
-      $scope.data3 = { 'volume' : '80' };
-
-      $scope.suma =  parseInt($scope.volume)+ parseInt($scope.volume2);
+      $scope.suma =  parseInt($scope.data1.volume)+
+                     parseInt($scope.data2.volume)+
+                     parseInt($scope.data3.volume)+
+                     parseInt($scope.data4.volume)+
+                     parseInt($scope.data5.volume)+
+                     parseInt($scope.data6.volume)+
+                     parseInt($scope.data7.volume)
+      ;
     }
 
     $scope.toIntro = function(){
