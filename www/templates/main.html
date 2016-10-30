@@ -11,6 +11,7 @@
 
       <div ng-controller="MainCtrl">
         <ion-list>
+          <div class="list-range">
           <div class="item range range-assertive">
             <i class="img-slider-1"></i>
             <input type="range" name="volume" min="0" max="1000"  ng-change="sumaChanged()" ng-model="data1.volume">
@@ -47,10 +48,33 @@
             <div class="range-number" ng-bind="data7.volume"></div>
           </div>
         </ion-list>
-
-        <div ng-bind="suma"></div>
       </div>
 
-      <button class="button" ng-click="toIntro()">atras</button>
+        <div class="calculator-div">
+          <div class="calculator-block border-radius">
+            <div class="consum-monthly">Tu consumo mensual:</div>
+            <div class="quantity-gigas"><span id="total-gigas"><div ng-bind="suma" style="background-color: #fff;
+padding: 0px 0px 2px 18px;
+width: 20%;
+border-radius: 50%;
+margin-top: 20px;
+position: relative;
+top: -60px;
+left: 152px;"></div></span> <span class="unit-storage">GB</span></div>
+          </div>
+          <div style="margin: 12px auto;
+padding: 10px;
+background: #fcea00;
+height: 50px;
+font-size: 29px;
+line-height: 38px;
+border-radius: 13px;
+text-align: center;">
+            <div class="activate-now"><strong>¡Actívate ya!</strong></div>
+          </div>
+        </div>
+      </div>
+
+      <!--<button class="button" ng-click="toIntro()">atras</button>-->
   </ion-content>
 </ion-view>

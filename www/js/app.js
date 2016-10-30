@@ -21,7 +21,7 @@ angular.module('starter', ['ionic'])
       StatusBar.styleDefault();
     }
   });
-})
+});
 angular.module('ionicApp', ['ionic'])
 
   .config(function($stateProvider, $urlRouterProvider) {
@@ -62,7 +62,7 @@ angular.module('ionicApp', ['ionic'])
   })
 
   .controller('MainCtrl', function($scope, $state) {
-    console.log('MainCtrl');
+    //console.log('MainCtrl');
 
     $scope.data1 = { 'volume' : '0' };
     $scope.data2 = { 'volume' : '0' };
@@ -71,23 +71,38 @@ angular.module('ionicApp', ['ionic'])
     $scope.data5 = { 'volume' : '0' };
     $scope.data6 = { 'volume' : '0' };
     $scope.data7 = { 'volume' : '0' };
+    $scope.sumaMb = 0;
     $scope.suma = 0;
 
     $scope.sumaChanged =  function(){
 
-      $scope.suma =  parseInt($scope.data1.volume)+
-                     parseInt($scope.data2.volume)+
-                     parseInt($scope.data3.volume)+
-                     parseInt($scope.data4.volume)+
-                     parseInt($scope.data5.volume)+
-                     parseInt($scope.data6.volume)+
-                     parseInt($scope.data7.volume)
-      ;
-    }
+      $scope.sumaMb =  (parseInt($scope.data1.volume)* 0.3)+
+        (parseInt($scope.data2.volume)* 2)+
+        (parseInt($scope.data3.volume)* 4)+
+        (parseInt($scope.data4.volume)* 30)+
+        (parseInt($scope.data5.volume)* 0.02)+
+        (parseInt($scope.data6.volume)* 5)+
+        (parseInt($scope.data7.volume)* 4);
+
+      $scope.suma =  parseFloat((($scope.sumaMb / 1024)*100)/100).toFixed(2);
+
+    };
+
+
 
     $scope.toIntro = function(){
       $state.go('intro');
     }
   });
+var fileContent = '';
+switch(ionic.Platform.isAndroid()) {
+  case true:
+    fileContent = 'file:///android_asset/www';
+    break;
+  case false:
+    fileContent = 'i18n';
+    break;
+}
+
 
 
